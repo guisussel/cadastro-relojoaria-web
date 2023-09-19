@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Soma</title>
+</head>
+
+<body>
+    <h1>Calculadora de Soma</h1>
+    <button id="calcularButton">CALCULAR</button>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('calcularButton').addEventListener('click', function() {
+            const resultado = calcularSomaNum1a100();
+            document.getElementById('resultado').textContent = `A soma dos números de 1 até 100 é: ${resultado}`;
+        });
+    </script>
+</body>
+
+</html>
